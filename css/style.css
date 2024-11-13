@@ -29,10 +29,6 @@
     --category-dessert: #9374EB;
     --category-misc: #9A951E;
     --category-pasta: #BF5B23;
-
-
-
-
 }
 
 /* Reset CSS */
@@ -241,7 +237,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 20px 0 0 0;
-  /* border-left: 1px solid var(--category-seafood); */
 }
 
 .todays_recipes_content_block_bottom_area_left {
@@ -369,11 +364,11 @@ div[data-category="meats"] {
   border-left: 1px solid var(--category-meats);
 }
 
-p[data-category="veg"] {
+p[data-category="vegetarian"] {
   color: var(--category-veg);
 }
 
-div[data-category="veg"] {
+div[data-category="vegetarian"] {
   border-left: 1px solid var(--category-veg);
 }
 
@@ -982,16 +977,304 @@ div[data-category="pasta"] {
 
 }
 
+
+
+.instructions_and_ingredient_headline {
+  height:60px;
+  color:var(--color-white); 
+  border-bottom: 1px solid var(--color-white);
+  font-size:37px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: var(--width-12col);
+  padding: 0 20px 20px 0;
+  width:var(--width-12col);
+  margin:90px auto 0 auto;  
+  text-shadow: 1px 1px 3px var(--primary-color);
+  line-height: 50px;
+}
+
+.instructions_headline {
+  grid-column: 1 / span 6;
+}
+
+.ingredients_headline {
+  grid-column: 9 / span 4;
+  padding-right: 20px;
+}
+
+.instructions_and_ingredients_list {
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+ width: var(--width-12col);
+ margin: 0 auto;
+ padding: 20px 0 20px 20px ;
+}
+  
+.instructions_box {
+  color: var(--color-light);
+  grid-column: 1 / span 6;
+  font-size: 14px;
+}
+
+.ingredients_box {
+  color: var(--color-light);
+  grid-column: 9 / span 4;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.instructions_and_ingredients_list ol li {
+  padding: 15px;
+  line-height: 24px;
+}
+
+.instructions_and_ingredients_list ul li {
+  padding: 5px;
+}
+
+/* part two */
+
+.instructions_and_ingredient_headline_2 {
+  height:60px;
+  color:var(--color-white); 
+  border-bottom: 1px solid var(--color-white);
+  font-size:37px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: var(--width-12col);
+  padding: 0 20px 20px 0;
+  width:var(--width-12col);
+  margin:100px auto 0 auto;  
+  text-shadow: 1px 1px 3px var(--primary-color);
+  line-height: 50px;
+}
+
+.instructions_and_ingredients_list_2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: var(--width-12col);
+  margin: 0 auto;
+  padding: 20px 0 20px 20px ;
+ }
+   
+ .instructions_box_2 {
+   color: var(--color-light);
+   grid-column: 1 / span 6;
+   font-size: 14px;
+   padding-left: 15px;
+ }
+ 
+ .ingredients_box_2 {
+   color: var(--color-light);
+   grid-column: 9 / span 4;
+   font-size: 14px;
+   padding-top: 10px;
+ }
+ 
+ .instructions_and_ingredients_list_2 ol {
+  list-style-type: none;
+  list-style-position: outside;
+ }
+
+ .instructions_and_ingredients_list_2 ol li {
+   padding: 15px;
+   line-height: 24px;
+   position: relative;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_1::before {
+  content: 'Step 1';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 14px;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_2::before {
+  content: 'Step 2';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 15px;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_3::before {
+  content: 'Step 3';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 15px;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_4::before {
+  content: 'Step 4';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 16px;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_5::before {
+  content: 'Step 5';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 15px;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_6::before {
+  content: 'Step 6';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 15px;
+ }
+
+ .instructions_and_ingredients_list_2 ol li.step_7::before {
+  content: 'Step 7';
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  left: -50px;
+  top: 18px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: 13px;
+ }
+ 
+ .instructions_and_ingredients_list_2 ul li {
+   padding: 5px;
+   list-style-type: none;
+ }
+
 /* filler to fake rest of page */
 
 .filler_block {
-  height: 2000px;
+  height: 1000px;
   width: 100%;
 } 
 
 
-
 /* SIDE 3 soupsselection egen side ---------------------------------------------------------*/
+
+
+.todays_recipe_2 {
+  height: fit-content;
+  width:var(--width-full);
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto;
+  gap:var(--grid-gap);
+  
+}
+
+.todays_recipes_content_2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  gap:var(--grid-gap);
+  height: fit-content;
+  margin:30px auto 0 auto;
+  box-sizing: border-box;
+  width: var(--width-12col);
+}
+
+
+
+/* content image 2 */
+.content_image_2 {
+  width: var(--width-full);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 50px, 100% 100%, 0% 100%);
+  background-image: url('https://picsum.photos/1280/650');
+}
+
+.content_image_form_2 {
+  width:var(--width-12col);
+  margin: 100px auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 160px 187px auto;
+}
+
+.content_image_box_2 {
+  grid-column: 9 / span 4;
+  grid-row: 2;
+  background-color: var(--background-color-light);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.content_image_box_small_header_2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content_image_box_header_2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff5c00;
+}
+
+.content_image_box_text_2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.filler_box_2 {
+  height: 300px;
+}
+
+
 
 
 
