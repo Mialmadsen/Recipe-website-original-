@@ -1087,6 +1087,8 @@ div[data-category="pasta"] {
    position: relative;
  }
 
+/* Hjælp fra chat gpt & google start */
+
  .instructions_and_ingredients_list_2 ol li.step_1::before {
   content: 'Step 1';
   color: var(--primary-color);
@@ -1182,8 +1184,11 @@ div[data-category="pasta"] {
   font-size: 13px;
   text-transform: uppercase;
   word-spacing: 5px;
-  margin-top: 16px;
+  margin-top: 15px;
  }
+
+ /* Hjælp fra chat gpt & google slut ^ */
+ 
  
  .instructions_and_ingredients_list_2 ul li {
    padding: 5px;
@@ -1280,12 +1285,158 @@ div[data-category="pasta"] {
 
 /*media queires i bunden --------------------------------------------------------------------*/
 
+/* Mobile version */
+
+/* Home page */
+
+@media (width < 768px) {
+
+  .menu-container ul {
+    font-size: 20px;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+
+  .hero-text-small-header {
+    font-size: 17px;
+  }
+
+  .hero-text-big-header {
+    font-size: 40px;
+    
+  }
+
+  .search-box {
+    padding: 20px 50px 20px 30px;
+    font-size: 20px;
+  }
+
+  .todays_recipes_headline {
+    width: var(--width-full);
+    padding: 10px;
+  }
+  .todays_recipes_content {
+    width: var(--width-full);
+    grid-template-columns:  1fr;
+    padding: 10px;
+  }
+
+  .categories_selection_headline {
+    width: var(--width-full);
+    padding: 10px;
+  }
+
+  .categories_selection_box {
+    width: var(--width-full);
+    flex-wrap: wrap;
+  }
+
+  .content_image {
+    display: none;
+  }
+
+  .content_area_headline {
+    width: var(--width-full);
+    padding: 10px;
+  }
+
+  .content_area_box {
+    width: var(--width-full);
+  }
+
+  .content_area_boxes {
+    width: 100%;
+  }
+
+  .footer_container {
+    width: var(--width-full);
+  }
+}
 
 
+/* Recipe page */
+
+@media (width < 768px) {
+
+  .recipe_details_right_image {
+    display: none;
+  }
+
+  .recipe-hero-text-smallest {
+    font-size: 17px;
+  }
+
+  .recipe-hero-text-medium {
+    font-size: 40px;
+  }
+
+  .recipe-hero-text-large {
+    font-size: 40px;
+  }
+
+  .instructions_and_ingredient_headline {
+    width: var(--width-full);
+  }
+
+  .ingredients_headline {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+  }
+
+  .ingredients_box {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+     width: var(--width-full);
+    grid-column: 1 / span 12;
+  }
+
+  .instructions_box {
+    width: var(--width-full);
+    grid-column: 1 / span 12;
+  }
+
+  .instructions_and_ingredients_list {
+    width: var(--width-full);
+    grid-column: 1 / span 12;
+  }
+
+  .ingredients_box_2 {
+    width: var(--width-full);
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .instructions_box_2 {
+    width: var(--width-full);
+    
+  }
+
+  
+  .filler_block {
+    height: 200px;
+  }
+
+ 
 
 
+}
 
+/* Soups selection page */
 
+@media (width < 768px) {
+  .todays_recipes_content_2 {
+    width: var(--width-full);
+    grid-template-columns:  1fr;
+    padding: 10px;
+  }
 
-
-
+  .content_image_2 {
+    display: none;
+  }
+}
