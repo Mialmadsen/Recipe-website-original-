@@ -1292,11 +1292,26 @@ div[data-category="pasta"] {
 @media (width < 768px) {
 
   .menu-container ul {
+    width: var(--width-full);
+    justify-content: center;
     font-size: 20px;
   }
 
+  .hero { /* fjerner gennemsigt top */
+    margin-top: 0;
+  }
+
+  .navigation {
+    width: var(--width-full);
+  }
+
+  .menu-container {
+    width: var(--width-full);
+  }
+
   .hero-text {
-    padding: 10px;
+    padding-left: 10px;
+    grid-column: 1 / span 4;
   }
 
   .hero-text-small-header {
@@ -1309,13 +1324,15 @@ div[data-category="pasta"] {
   }
 
   .search-box {
-    padding: 20px 50px 20px 30px;
+    padding: 15px 45px 15px 25px;
     font-size: 20px;
   }
 
   .todays_recipes_headline {
     width: var(--width-full);
     padding: 10px;
+    border-bottom: none;
+    font-size: 30px;
   }
   .todays_recipes_content {
     width: var(--width-full);
@@ -1326,6 +1343,10 @@ div[data-category="pasta"] {
   .categories_selection_headline {
     width: var(--width-full);
     padding: 10px;
+    font-size: 30px;
+    border-bottom: none;
+    margin-bottom: 50px;
+    margin-top: 200px;
   }
 
   .categories_selection_box {
@@ -1340,6 +1361,8 @@ div[data-category="pasta"] {
   .content_area_headline {
     width: var(--width-full);
     padding: 10px;
+    border-bottom: none;
+    font-size: 30px;
   }
 
   .content_area_box {
@@ -1364,6 +1387,10 @@ div[data-category="pasta"] {
     display: none;
   }
 
+  .recipe-hero-text {
+    grid-column: 1 / span 4;
+  }
+
   .recipe-hero-text-smallest {
     font-size: 17px;
   }
@@ -1378,6 +1405,8 @@ div[data-category="pasta"] {
 
   .instructions_and_ingredient_headline {
     width: var(--width-full);
+    border-bottom: none;
+    font-size: 30px;
   }
 
   .ingredients_headline {
@@ -1404,6 +1433,15 @@ div[data-category="pasta"] {
     grid-column: 1 / span 12;
   }
 
+  .instructions_and_ingredient_headline_2 {
+    border-bottom: none;
+    font-size: 30px;
+  }
+
+  .instructions_and_ingredients_list_2 {
+    width: var(--width-full);
+  }
+
   .ingredients_box_2 {
     width: var(--width-full);
     grid-column: 1 / span 12;
@@ -1414,6 +1452,7 @@ div[data-category="pasta"] {
 
   .instructions_box_2 {
     width: var(--width-full);
+    grid-column: 1 / span 12;
     
   }
 
